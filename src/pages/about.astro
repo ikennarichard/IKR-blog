@@ -1,8 +1,50 @@
+---
+const pageTitle = "About me";
+
+const identity = {
+    firstName:"Ikenna",
+    country: "Nigeria",
+    occupation: "Frontend Developer",
+    hobbies: ['chess', 'stargazing', 'learning'],
+}
+
+const skills = ["HTML", "CSS", 'Javascript', 'Astro', 'Python' ];
+
+const happy = true;
+const finished = false;
+const goal = '✔️ 3';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageTitle}</title>
+</head>
 <body>
     <a href="/">Home</a>
-    <a href="/blog/">Blogs</a>
-    <section class="about_me">
-        <h2>About me</h2>
+    <a href="/about/">About me</a>
+    <a href="/blog/">Blog</a>
+<h2>About me</h2>
 <p>Hello I'm Ikenna Richard, a front end developer from Nigeria, I dont have much clue about writing a blog but I love creating awesome contents with Javascript and Astro. If you want to know more about me, check out my github profile <a href="http://github.com/ikennarichard" target="_blank" rel="noopener noreferrer">@ikennarichard</a>. It's nice having you around.</p>
-    </section>
+
+<p>Here are a few facts about me:</p>
+<ul>
+  <li>My name is {identity.firstName}.</li>
+  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 && 
+    <li>Two of my hobbies are: playing {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  } 
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+
+{happy && <p>Astro is awesome</p>}
+{finished && <p>I finished this tutorial</p>}
+{happy && <p>My goal is to finish in {goal} days</p>}
+
 </body>
+</html>
