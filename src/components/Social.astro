@@ -1,0 +1,31 @@
+---
+const { platform, username, image } = Astro.props;
+---
+
+<a href={`https://${platform}.com/${username}`} target="_blank"><img src={image} alt="" ></a>
+
+
+<style>
+img {
+    width: 20px;
+}
+
+a {
+    padding: 0.5rem .2rem;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+img:hover {
+    transform: rotate(360deg);
+    animation: flip .2s ease-out alternate;
+}
+
+@keyframes flip {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(180deg);}
+    75% {transform: rotate(280deg);}
+    100% {transform: rotate(360deg);}
+}
+    
+</style>
