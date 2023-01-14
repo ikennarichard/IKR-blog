@@ -1,5 +1,8 @@
 ---
-const pageTitle = "About me";
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+
+const pageTitle = 'About me';
 
 const identity = {
     firstName:"Ikenna",
@@ -8,13 +11,15 @@ const identity = {
     hobbies: ['chess', 'stargazing', 'learning'],
 }
 
-const skills = ["HTML", "CSS", 'Javascript', 'Astro', 'Python' ];
+const skills = ['HTML', 'CSS', 'Javascript', 'Astro', 'Python' ];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = '✔️ 3';
 
-const skillColor = '#ae1255';
+const skillColor = '#0f8a42';
+const fontWeight = '600';
+const textCase = 'uppercase';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +29,7 @@ const skillColor = '#ae1255';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{pageTitle}</title>
     <!-- styles -->
-    <style define:vars={{skillColor}}>
+    <style define:vars={{skillColor, fontWeight, textCase}}>
         h1 {
             color: purple;
             font-size: 4rem;
@@ -32,14 +37,13 @@ const skillColor = '#ae1255';
 
         .skill {
             color: var(--skillColor);
-            font-weight: bold;
+            font-weight: var(--fontWeight);
+            text-transform: var(--textCase);
         }
     </style>
 </head>
 <body>
-    <a href="/">Home</a>
-    <a href="/about/">About me</a>
-    <a href="/blog/">Blog</a>
+<Navigation />
 <h1>About me</h1>
 <p>Hello I'm Ikenna Richard, a front end developer from Nigeria, I dont have much clue about writing a blog but I love creating awesome contents with Javascript and Astro. If you want to know more about me, check out my github profile <a href="http://github.com/ikennarichard" target="_blank" rel="noopener noreferrer">@ikennarichard</a>. It's nice having you around.</p>
 
@@ -57,8 +61,7 @@ const skillColor = '#ae1255';
 </ul>
 
 {happy && <p>Astro is awesome</p>}
-{finished && <p>I finished this tutorial</p>}
-{happy && <p>My goal is to finish in {goal} days</p>}
+{finished ? <p>Done amigos 🤠</p>:<p>My goal is to finish in {goal} days</p>}
 
 </body>
 </html>
