@@ -6,7 +6,7 @@ const pageHeader = 'About me'
 const pageTitle = 'About me';
 
 const identity = {
-    firstName:"Ikenna",
+    alias:"richy",
     country: "Nigeria",
     occupation: "Frontend Developer",
     hobbies: ['chess', 'stargazing', 'learning'],
@@ -36,8 +36,8 @@ const textCase = 'uppercase';
 
 <p>Here are a few facts about me:</p>
 <ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  <li>Everyone calls me {identity.alias}.</li>
+  <li>I live in {identity.country}</li> 
   {identity.hobbies.length >= 2 && 
     <li>Two of my hobbies are: playing {identity.hobbies[0]} and {identity.hobbies[1]}</li>
   } 

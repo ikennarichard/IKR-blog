@@ -1,7 +1,12 @@
 ---
+import LastUpdated from "../components/LastUpdated.astro";
+import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
----
 
-<h1>{frontmatter.title}</h1>
+---
+<BaseLayout page_title={frontmatter.title} page_header={frontmatter.title}>
 <p>Written by {frontmatter.author}</p>
+<LastUpdated publish_date = {frontmatter.pubDate.slice(0, 10)}/>
+<img src={frontmatter.image.url} alt={frontmatter.image.alt} />
 <slot />
+</BaseLayout>
