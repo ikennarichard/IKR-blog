@@ -23,6 +23,6 @@ You can use javascript variables in astro to decide whether or not to render con
 
 ```
 
-Javascript variables, expressions are declared in the frontmatter component script within an Astro component. 
+Javascript variables, are declared in the frontmatter component script within an Astro component. 
 
 Astro uses JSX like expressions `<p> {happy} </p>` to insert the Javascript expression within the components HTML template.
