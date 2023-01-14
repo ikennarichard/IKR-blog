@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Conditional Rendering'
 pubDate: 2023-1-13
 description: 'Conditional rendering with Astro'
@@ -6,8 +7,6 @@ author: 'Ikenna Richard'
 
 tags: ["conditional rendering","astro", "blogging", "learning in public"]
 ---
-
-# Conditional Rendering
 
 Published on: 2023-01-13
 
