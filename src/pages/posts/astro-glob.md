@@ -5,7 +5,7 @@ pubDate: 2023-01-14
 description: 'Load local files into your site with astro.glob()'
 author: 'Ikenna Richard'
 image:
- url: '../../public/img/earth-from-space.jpg' 
+ url: '/assets/earth-from-space.jpg' 
 alt: 'Earth seen from space'
 
 tags: ['glob']

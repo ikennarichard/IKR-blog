@@ -5,11 +5,10 @@ pubDate: 2023-01-13
 description: 'This is the first post of my new blog built with Astro'
 author: 'Ikenna Richard'
 image:
-    url: '../../public/img/Electric-Dark-Matter.jpg' 
+    url: '/assets/Electric-Dark-Matter.jpg' 
     alt: 'The evolution of the Universe beginning with the Big Bang on the left followed by the appearance of the Cosmic Microwave Background.'
 tags: ['intro']
 ---
-
 
 Welcome to my blog about learning Javascript and Astro here I will share my learning journey as I build projects.
 
