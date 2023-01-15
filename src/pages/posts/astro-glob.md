@@ -11,7 +11,7 @@ alt: 'Earth seen from space'
 tags: ['glob']
 ---
 
-Astro provides a way to fetch local files into your site with Astro.glob methd. The Astro.glob function takes one parameter, a relative URL of the files to fetch and returns an array of the matching files. The process is asynchronous.
+Astro provides a way to fetch local files into your site with Astro.glob. The Astro.glob function takes one parameter, a relative URL of the files to fetch and returns an array of the matching files. The process is asynchronous.
 
 ```astro
 const allPosts = await Astro.glob('../pages/posts/*.md')

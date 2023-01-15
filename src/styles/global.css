@@ -68,6 +68,7 @@ html {
 
   a:visited {
     color: lightslategray;
+    text-decoration: underline;
 }
 
   
@@ -82,15 +83,7 @@ html {
     display: unset;
   }
   
-/* dark theme */
-  .dark body {
-    background-color: #0d0950;
-    color: #aaa;
-  }
   
-  .dark .nav-links a {
-    color: lightslategray;
-  }
   @media screen and (min-width: 636px) {
     .nav-links {
       margin-left: 5em;
