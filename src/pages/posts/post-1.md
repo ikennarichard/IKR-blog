@@ -5,9 +5,9 @@ pubDate: 2023-01-13
 description: 'This is the first post of my new blog built with Astro'
 author: 'Ikenna Richard'
 image:
-    url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
-    alt: 'The Astro logo with the word One.'
-tags: ["astro", "blogging", "learning in public"]
+    url: '../../public/img/Electric-Dark-Matter.jpg' 
+    alt: 'The evolution of the Universe beginning with the Big Bang on the left followed by the appearance of the Cosmic Microwave Background.'
+tags: ['intro']
 ---
 
 

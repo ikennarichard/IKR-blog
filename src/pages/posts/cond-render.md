@@ -8,7 +8,7 @@ image:
  url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
 alt: 'The Astro logo with the word One.'
 
-tags: ["conditional rendering","astro", "blogging", "learning in public"]
+tags: ["conditional rendering"]
 ---
 
 Conditional rendering is the ability to render content when a certain condition is met. Most web frameworks including Astro implement conditional rendering, it makes Single Page Applications (SPA) dynamic  and more interactive. 

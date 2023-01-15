@@ -2,11 +2,30 @@
 import LastUpdated from "../components/LastUpdated.astro";
 import BaseLayout from "./BaseLayout.astro";
 const { frontmatter } = Astro.props;
-
 ---
 <BaseLayout page_title={frontmatter.title} page_header={frontmatter.title}>
 <p>Written by {frontmatter.author}</p>
 <LastUpdated publish_date = {frontmatter.pubDate.slice(0, 10)}/>
 <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-<slot />
+<div class="tags"> {frontmatter.tags.map(tag => <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>)}</div>
+<slot /> 
 </BaseLayout>
+
+
+<style>
+          
+    .tags {
+      display: flex; 
+      flex-wrap: wrap; 
+      margin: 0 auto;  
+    }
+  
+    .tag {
+      margin: 0.25em;
+      border: dotted 1px #a1a1a1;
+      border-radius: .5em;
+      padding: .5em 1em;
+      font-size: 1.15em;
+      background-color: #F8FCFD;
+    }
+  </style>
