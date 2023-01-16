@@ -2,12 +2,14 @@
 const { platform, username, image } = Astro.props;
 ---
 
-<a href={`https://${platform}.com/${username}`} target="_blank"><img src={image} alt="" ></a>
+<a href={`https://${platform}.com/${username}`} target="_blank"><img src={image} alt="" class={platform}></a>
 
 
 <style>
+
+
 img {
-    width: 20px;
+    width: 30px;
 }
 
 a {
@@ -17,15 +19,9 @@ a {
 }
 
 img:hover {
-    transform: rotate(360deg);
-    animation: flip .2s ease-out alternate;
+    scale: 1.2;
 }
 
-@keyframes flip {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(180deg);}
-    75% {transform: rotate(280deg);}
-    100% {transform: rotate(360deg);}
-}
+
     
 </style>

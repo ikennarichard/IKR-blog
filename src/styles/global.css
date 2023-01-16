@@ -31,6 +31,10 @@ html {
     font-size: 2.5rem;
   }
 
+  h3 {
+    text-align: center;
+}
+
   .hamburger {
     padding-right: 20px;
     cursor: pointer;
@@ -67,15 +71,13 @@ html {
 
 
   a:visited {
-    color: lightslategray;
-    text-decoration: underline;
+    color: purple;
 }
 
   
-  .nav-links a:hover, a:focus {
-    background-color: white;
+  .nav-links a:hover {
+    background-color: rgba(160, 168, 177, 0.444);
     transform: translate(0px, -3px);
-    
   }
 
   
